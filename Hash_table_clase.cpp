@@ -38,7 +38,7 @@ public:
 		m = 100000;
 		hash_table.resize(m);
 		//
-		p = findNextPrime(10000000); // 10^7
+		p = findNextPrime(100000000); // 10^8
 		a = rand()%p + 1;
 		b = rand()%(p+1) + 0;
 		//
@@ -48,7 +48,7 @@ public:
 	Hashing(int m): m(m) {
 		hash_table.resize(m);
 		//
-		p = findNextPrime(10000000); // 10^7
+		p = findNextPrime(100000000); // 10^8
 		a = rand()%p + 1;
 		b = rand()%(p+1) + 0;
 		//
