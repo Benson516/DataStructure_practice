@@ -10,6 +10,18 @@ using std::list;
 using std::cin;
 using std::cout;
 
+// This is the content (type: mapping) of the hash table
+struct Contact{
+	Contact(){
+	}
+	Contact(int number, string name): number(number), name(name)
+	{}
+	
+	int number;
+	string name;
+	// Contact* next_ptr;
+};
+
 class Hashing{
 private:
 	long long a,b;
