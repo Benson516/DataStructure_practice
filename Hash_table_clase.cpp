@@ -189,7 +189,7 @@ int main(){
   string name;
   int n;
   
-  cin << n;
+  cin >> n;
   for (int i = 0; i < n; i++){
   	cin >> number >> name;
   	hashing_ptr->Set(number,name);
