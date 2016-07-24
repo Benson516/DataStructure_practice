@@ -1,7 +1,14 @@
+#include <iostream>
 #include <vector>
 #include <string>
 #include <list>
 #include <math.h>
+
+using std::string;
+using std::vector;
+using std::list;
+using std::cin;
+using std::cout;
 
 class Hashing{
 private:
@@ -165,5 +172,20 @@ void rehash(Hashing*& hashing_ptr){ // reference the pointer, so that it can be 
 int main(){
   int m = 10;
   Hashing* hashing_ptr = new Hashing(m);
+  
+  int number;
+  string name;
+  int n;
+  
+  cin << n;
+  for (int i = 0; i < n; i++){
+  	cin >> number >> name;
+  	hashing_ptr->Set(number,name);
+  	rehash(hashing_ptr);
+  }
+  while(1){
+  	cin >> number;
+	cout << hashing_ptr->Get(number) << "\n";  	
+  }
   return 0;
 }
